@@ -1,0 +1,23 @@
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* keeps background behind all content */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Light mode background */
+:root .background-image {
+  background-image: url("/assets/bg-light.png"); /* or .png */
+  filter: none;
+}
+
+/* Dark mode background */
+.dark .background-image {
+  background-image: url("/assets/bg-dark.png"); /* or .png */
+  filter: none brightness(0.6); /* blur and darker effect */
+}

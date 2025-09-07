@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Hide system cursor */ *{cursor:none!important} ::selection{background:rgba(180,180,180,.35)}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
